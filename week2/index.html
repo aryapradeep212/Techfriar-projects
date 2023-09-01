@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+        }
+        .rows {
+            margin-top: -100px;
+            padding-left: 170px;
+            justify-content: space-around;
+            margin-right:110px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card {
+            align-content: center;
+            margin-top: 100px;
+            width: 20%;
+            border: 1px solid #2E333A;
+            margin-bottom: 50px;
+            transition: 0.3s;
+            
+        }
+
+        .header {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            background: #2E333A;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <div id="navbar">
+            <main id="logo"></main>
+            <img id="image" src="../week2/static/download (1).png" height="40px" width="100px">
+            <section id="nav-buttons">
+                <button id="signinbut"><span id="sign-in">Sign In</span></button>
+                <div class="dis"><img src="../week2/static/discord.png" style="height: 40px; width: 40px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+            </section>
+        </div>
+    </nav>
+    <div class="main">
+        <h2> Year’s end is neither an end nor a beginning but a going on.</h2>
+        <h4>Join us to celebrate the last night of the year across the country.</h4>
+        <button id="formbtn" type="submit" class="btn btn-primary">Create Account</button>
+        <br><br><p><img src="../week2/static/images.png" height="15px" width="15px">+ 23546 registrations</p><br>
+    </div>
+    <section id="cards">
+    <div class="rows">
+        <div class="card">
+            <div class="header">
+                <h4>A single source of truth</h4>
+                <p style="text-align: left;margin-top: 5px;">When you add work to your Slate calendar, we automatically calculate useful insights</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header">
+                <h4>Intuitive interface</h4>
+                <p style="text-align: left;margin-top: 5px;">When you add work to your Slate calendar, we automatically calculate useful insights</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header">
+                <h4>Or with rules</h4>
+                <p style="text-align: left; margin-top: 5px;">When you add work to your Slate calendar, we automatically calculate useful insights</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="add-new-account-form">
+    <center>
+            <div class="signinhead">
+            <h1 style="text-align: center; color: #0ED2F6;">Add New Account</h1>
+            </div>
+            <div class="forminput">
+                <div class="row">
+                    <div class="col">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name"/>
+                    </div>
+                    <div class="col">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="forminput">
+                <div class="row">
+                    <div class="col">
+                        <label for="organisation">Organisation</label>
+                        <input type="text" class="form-control" id="organisation"/>
+                    </div>
+                    <div class="col">
+                        <label for="role">Role</label>
+                        <input type="text" class="form-control" id="role"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forminput">
+                <div class="row">
+                    <div class="col">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" />
+                    </div>
+                    <div class="col">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirm-password" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="forminput">
+                <label for="profile-summary">Profile Summary</label>
+                <textarea class="form-control" id="profile-summary" rows="3"></textarea>
+                <a href="#">Already have an account</a>
+            </div>
+            <button id="formbtn" type="submit" class="btn btn-primary">Create Account</button>
+        </div>
+    </center>
+</section>
+</body>
+</html>
