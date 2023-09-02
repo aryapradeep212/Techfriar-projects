@@ -6,8 +6,31 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
     <style>
-        
+        html{
+            margin-left: 75px;
+
+        }
+        .menu{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 75px;
+            height: 100px;
+            background-color: #2E333A;
+            
+        }
+        .menu_item{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 0;
+            text-decoration: none;
+            color: #2E333A;
+        }
         * {
             padding: 0;
             margin: 0;
@@ -17,16 +40,17 @@
         #cards{
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: right;
             margin-top: 5%;
         }
         .rows {
             margin-top: -100px;
             padding-left: 170px;
-            justify-content: space-around;
+            justify-content:flex-start;
             margin-right:110px;
-            display: flex;
+            display:flex;
             flex-direction: row;
+            
         }
 
         .card {
@@ -36,78 +60,87 @@
             border: 1px solid #2E333A;
             margin-bottom: 50px;
             transition: 0.3s;
-            
         }
 
         .header {
             font-family: "Poppins", sans-serif;
-            text-align: center;
+            text-align:left;
             background: #2E333A;
+            font-size:20px;
+            padding: auto;
+            padding-left: 20px;
+            width: 320px;
+            height: 450px;
+            border-radius: 12px;
+            box-shadow: 3px 3px 6px 0px #000000 inset;
+        }
+        .header1 {
+            text-align:left;
+            background: #2E333A;
+            font-size:20px;
+            width:800px;
+            height: 500px;
+            padding-right: 100px;
+            border-radius: 12px;
+            margin-left: 100px;  
+            margin-top: -20px;          
         }
     </style>
-
-    <title>Document</title>
+    </style>
 </head>
 <body>
     <nav class="nav">
         <div id="navbar">
             <main id="logo"></main>
-            <img id="image" src="../week2/static/download (1).png" height="40px" width="100px">
-            <section id="nav-buttons">
-                <button id="signinbut"><span id="sign-in">Sign In</span></button>
-                <div class="dis"><img src="../week2/static/discord.png" style="height: 40px; width: 40px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+            <img id="image" src="../week2/static/image 1.svg" height="40px" width="100px">
+            <section id="search">
+                <div class="search-container">
+                <input type="text" class="form-control1" placeholder="Search.." name="search">
+                <button type="submit" style="height: 35px; width: 40px; border-radius: 20%;  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);" ><i class="fa fa-search"></i></button>
+        </div>
+                <div class="dis"><img src="../week2/static/Discord.svg" style="height: 40px; width: 40px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+                <div class="dis"><img src="../week2/static/twitter.svg" style="height: 40px; width: 40px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+                <div class="dis"><img src="../week2/static/Notification.svg" style="height: 40px; width: 40px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+                <div class="dis"><img src="../week2/static/Content.svg" style="height: 40px; width: 40px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
             </section>
         </div>
     </nav>
-    <div class="main">
-        <h2> Year’s end is neither an end nor a beginning but a going on.</h2>
-        <h4>Join us to celebrate the last night of the year across the country.</h4>
-        <button id="formbtn" type="submit" class="btn btn-primary">Create Account</button>
-        <br><br><p><img src="../week2/static/images.png" height="15px" width="15px">+ 23546 registrations</p><br>
-    </div>
+    <nav class="menu"><br><br><br><br><br>
+        <div class="menu_item" ><img src="../week2/static/Overview.svg" style="height: 30px; width: 30px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+        <div class="menu_item" ><img src="../week2/static/Discord.svg" style="height: 30px; width: 30px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+        <div class="menu_item" ><img src="../week2/static/Tracker.svg" style="height: 30px; width: 30px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+        <div class="menu_item" ><img src="../week2/static/Payments.svg" style="height: 30px; width: 30px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+        <div class="menu_item" ><img src="../week2/static/Share.svg" style="height: 30px; width: 30px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+        <div class="menu_item" ><img src="../week2/static/Settings.svg" style="height: 30px; width: 30px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+        <div class="menu_item" ><img src="../week2/static/FAQ.svg" style="height: 30px; width: 30px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+        <div class="menu_item" ><img src="../week2/static/Logout.svg" style="height: 30px; width: 30px; border-radius: 20%; box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 1);"></div>
+
+    </nav>
     <section id="cards">
-    <div class="rows">
-        <div class="card">
-            <div class="header">
-                <h4>A single source of truth</h4>
-                <p style="text-align: left;margin-top: 5px;">When you add work to your Slate calendar, we automatically calculate useful insights</p>
+        <div class="rows">
+            <div class="card">
+                <div class="header">
+                    <h2>Forecast</h2><br>
+                    <h5>Today so far:</h5><br>
+                    <h5 style="color: aqua;">0 SLP</h5>
+                    <h6 style="color: aquamarine;">-0.00USD</h6><br>
+                    <h5>Expected at the end of the day:</h5><br>
+                    <h5>0 SLP</h5>
+                    <h6>-0.00USD</h6><br>
+                    <h5>In 0 days you can claim:</h5><br>
+                    <h5>10 SLP</h5>
+                    <h6>-0.18USD</h6><br>
+                    <h5>Expecting for 0 days:</h5><br>
+                    <h5>9 SLP</h5>
+                    <h6>-0.17USD</h6><br>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="header">
-                <h4>Intuitive interface</h4>
-                <p style="text-align: left;margin-top: 5px;">When you add work to your Slate calendar, we automatically calculate useful insights</p>
+            <div class="card">
+                <div>
+                  <img class="header1" src="../week2/static/Daily SLP.svg">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="header">
-                <h4>Or with rules</h4>
-                <p style="text-align: left; margin-top: 5px;">When you add work to your Slate calendar, we automatically calculate useful insights</p>
-            </div>
-        </div>
-    </div>
-</section>
-    <section id="add-new-account-form">
-    <center>
-            <div class="signinhead">
-            <h1 style="text-align: center; color: #0ED2F6;">Sign In Your Account/h1>
-            </div>
-            <div class="forminput">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name"/>
-            </div>
-            <div class="forminput">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" />
-            </div>
-            <div class="forminput">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" />
-                <a href="#">Forgot your password</a>
-            </div>
-            <button id="formbtn" type="submit" class="btn btn-primary">Create Account</button>
-        </div>
-    </center>
-</section>
+    </section>
+    
 </body>
 </html>

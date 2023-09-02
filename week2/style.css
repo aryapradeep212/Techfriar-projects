@@ -93,6 +93,17 @@ body {
     order: 1;
 }
 
+
+
+#search{
+    float:right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    
+}
+
 #signinbut{
     float: right;
     height: 40px;
@@ -140,11 +151,25 @@ body {
     align-content: center;
 }
 
+.form-control1 {
+    width: 70%;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 0px #000000 inset;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #B2C2CB;
+    background-color: #2E333A;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
 #formbtn:hover {
 
     background-color: #0ED2F6;
     color:aquamarine;
 }
+
 
 .form-control:focus{
     outline: none;
